@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, StatusBar } from "react-native";
 
 export default class Legoinfo extends React.Component{
     render(){
@@ -16,9 +16,6 @@ export default class Legoinfo extends React.Component{
 }
 
 const styles = StyleSheet.create({
-    screencheck: {
-        margintop: Platform.OS==="android"?StatusBar.currentHeight:0
-    },
     backgroundImage: {
         flex: 1,
         resizeMode: 'cover',
